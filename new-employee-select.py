@@ -171,7 +171,7 @@ if st.session_state.get('file_ready'):
 # ====================== 文件下载处理 ======================
 if st.session_state.get('file_ready'):
     # 生成带时区日期后缀
-    current_date = datetime.now(timezone.utc+8).strftime("%Y%m%d")
+    current_date = datetime.now(timezone.utc).strftime("%Y%m%d")
     
     # 创建内存文件对象
     output1 = BytesIO()
